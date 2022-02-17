@@ -355,7 +355,7 @@ body {
     margin: 0 0 22px 0;
 }
 .maket__item {
-    display: inline-block;
+    display: block;
     line-height: 1.6;
     color: #424551;
     padding:  0 0 0 32px;
@@ -366,11 +366,11 @@ body {
 }
 .maket__item::before{
     content: "";
-    background: url(../img/icons/03.png) 0 0 / 20px no-repeat;
+    background: url(../img/icons/03.png) 0 0 / 16px no-repeat;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 16px -4px -12px;
+    width: 16px;
+    height: 16px;
+    margin: 0 16px 0 -32px;
 }
 .maket__button{
     display: inline-block;
