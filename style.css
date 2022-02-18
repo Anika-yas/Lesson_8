@@ -1,0 +1,415 @@
+@import url(null.css);
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jura&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+
+
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ========================= ЧЕРЕДУЮЩИЕСЯ КВАДРАТЫ ============================== */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(
+        35deg,
+        hsl(0deg 0% 100%) 0%,
+        hsl(300deg 100% 91%) 1%,
+        hsl(300deg 100% 81%) 3%,
+        hsl(300deg 100% 69%) 4%,
+        hsl(300deg 100% 60%) 6%,
+        hsl(302deg 100% 74%) 9%,
+        hsl(308deg 100% 84%) 12%,
+        hsl(325deg 100% 92%) 16%,
+        hsl(26deg 44% 93%) 20%,
+        hsl(85deg 37% 89%) 26%,
+        hsl(106deg 50% 86%) 35%,
+        hsl(116deg 59% 84%) 49%,
+        hsl(196deg 18% 75%) 74%,
+        hsl(252deg 55% 72%) 90%,
+        hsl(255deg 83% 64%) 97%,
+        hsl(251deg 100% 50%) 100%);
+}
+.practic {
+    padding: 30px;
+    max-width: 1500px;
+    margin: 0 auto 35px;
+}
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    text-shadow: 4px -4px 3px rgb(73, 72, 72);
+}
+.subtitle {
+    font-family: "Marck Scrip", cursive;
+    font-size: 30px;
+    margin: 0 0 25px 0;
+}
+.subtitle-link {
+    text-decoration: underline;
+}
+.subtitle-link:visited{
+    color: rgb(51, 22, 78);
+}
+.subtitle-link:hover{
+    font-family: "Train One", cursive;
+    color: blueviolet;
+    text-decoration: underline;
+}
+.subtitle-text{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+.square {
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+.sq-color {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(71, 223, 66);
+    box-shadow: 1px 1px 7px 4px gray;
+}
+.sq-color:not(:last-child){
+    margin:  0 15px 0 0;
+}
+.sq-color:nth-child(odd){
+    background-color: rgb(243, 239, 0);
+}
+
+.sq-color:nth-child(1):active {
+    background-image: url(../img/1-01.jpg);
+    background-position: center;
+    background-size: 80px 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.sq-color:nth-child(2):active {
+    background-image: url(../img/1-02.jpg);
+    background-position: center;
+    background-size: 80px 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.sq-color:nth-child(3):active {
+    background-image: url(../img/1-03.jpg);
+    background-position: center;
+    background-size: 80px 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.sq-color:nth-child(4):active {
+    background-image: url(../img/1-04.jpg);
+    background-position: center;
+    background-size: 80px 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.sq-color:nth-child(5):active {
+    background-image: url(../img/1-05.jpg);
+    background-position: center;
+    background-size: 80px 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+.sq-color:hover {
+    background-color: rgb(234, 0, 255);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+/* ================ ПОЯВЛЕНИЕ БЛОКА ================== */
+
+
+.connection{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
+    border-top-left-radius: 95px;
+    border-top-right-radius: 95px;
+    padding: 30px 30px 150px;
+}
+.button{
+    margin: 0 0 35px 0;
+    text-align: center;
+
+}
+/*  ОПИСАНИЕ КНОПКИ ОБЩИХ ПАРАМЕТРОВ ДЛЯ ВСЕХ */
+.btn {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 25px;
+}
+/*  ОПИСАНИЕ КНОПКИ ШУТКИ-МИНУТКИ */
+.b-pink {
+    font-weight: 700;
+    font-size: 26px;
+    width: 400px;
+    color: white;
+    text-shadow: 4px 4px 7px rgb(109, 109, 109);
+    background-color:  rgb(188, 121, 194);
+    box-shadow: 0 5px 0 1px rgb(77, 62, 93);
+}
+/*  ИЗМЕНЕНИЕ ПОЛОЖЕНИЯ КНОПКИ ПРИ НАЖАТИИ */
+.btn:active{
+    box-shadow: 0 0 0 0 rebeccapurple, inset 0 0 3px 1px rgb(77, 62, 93);
+    margin: 5px 0 0 0;
+}
+/*  БЛОК С КАРТИНКАМИ */
+.block{
+    text-align: center;
+    display: none;
+    background-image: linear-gradient( 40deg,
+    hsl(317deg 85% 59%) 0%,
+    hsl(301deg 46% 64%) 19%,
+    hsl(245deg 44% 74%) 32%,
+    hsl(200deg 71% 67%) 42%,
+    hsl(202deg 68% 81%) 51%,
+    hsl(204deg 66% 91%) 58%,
+    hsl(0deg 0% 100%) 65%,
+    hsl(58deg 61% 91%) 71%,
+    hsl(58deg 63% 81%) 77%,
+    hsl(58deg 67% 68%) 83%,
+    hsl(48deg 40% 76%) 88%,
+    hsl(302deg 17% 78%) 94%,
+    hsl(264deg 71% 81%) 100%);
+    border-bottom-left-radius: 95px;
+    border-bottom-right-radius: 95px;
+    padding:  0 0 35px 0;
+    margin: 0 0 40px 0;
+}
+.block-containt{
+    margin:  0 0 20px 0;
+}
+.block:target {
+    display: block;
+}
+.containt {
+    display: inline-block;
+    margin: 0 40px 0 0;
+}
+.containt:last-child{
+    margin: 0;
+}
+.connection-image {
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    min-height: 400px;
+} 
+.close {
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color:  rgb(63, 83, 199);
+    margin: 0;
+    box-shadow: 0 5px 0 1px rgb(77, 62, 93);
+}
+.close:target{
+    display: none;
+}
+
+
+/* БЛОК СО СПИСКОМ */
+.block-list{
+    background: url(../img/5.jpg) 100% 100% no-repeat, rgba(255, 255, 255, 0.514);
+    /* margin: 0 0 150px 0; */
+    padding: 10px;
+}
+.subtitle-h{
+    font-size: 46px;
+    text-align: center;
+    text-shadow: 5px 5px 3px violet;
+    padding: 25px;   
+    border-radius: 30px;
+}
+.subtitle-h:hover{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    text-shadow: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px rgb(97, 90, 97);
+    background: white;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    line-height: 2;
+}
+.list{
+    font-family: "Bebas Neue", cursive;
+    font-size: 26px;
+    padding: 20px 0 20px 20px;
+
+}
+.list-item {
+    margin: 0 0 25px 0;
+}
+
+.list-item:nth-child(even) {
+    font-size: 30px;
+    font-family: 'Kelly Slab', cursive;
+    background-color: yellow;
+    padding: 15px;
+}
+.list-item:nth-of-type(even)::after{
+    content: "";
+    display: inline-block;
+    background: url(../img/icons/02.png)  no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 20px ;  
+
+}
+.list-item:last-of-type {
+    margin: 0;
+}
+.subtitle h2::after{
+    content: " ";
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background: url(../img/04.jpg) 0 5px no-repeat;
+    margin: 0px 0 -15px 20px; 
+    border-radius: 20px;
+}
+.list-item:nth-of-type(2n+1)::before{
+    content: " ";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icons/01.png) 0 0 / cover no-repeat;
+    margin: 0px 5px -3px -20px;  
+}
+.list-item:hover{
+    font-size: 48px;
+    background: rgb(248, 176, 255);
+    box-shadow: 5px 5px 10px 3px rgb(193, 75, 204);
+    padding: 20px;
+}
+/* =========== ССЫЛКА НА МАКЕТ ========== */
+
+
+.link{
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+.btn-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+    width: 250px;
+    text-align: center;
+    text-shadow: 4px 4px 7px rgb(109, 109, 109);
+    background: rgb(224,63,251);
+    background: radial-gradient(circle, rgba(224,63,251,1) 0%, rgba(70,70,252,1) 100%);
+    box-shadow: 0 5px 0 1px rgb(77, 62, 93);
+    color: wheat;
+}
+.btn:active{
+    background: rgb(167, 85, 182);
+    background: radial-gradient(circle, rgb(186, 124, 197) 0%, rgb(85, 85, 228) 100%);
+    box-shadow: 0 0 0 0 rebeccapurple, inset 0 0 3px 1px rgb(77, 62, 93);
+    margin: 15px 0 0 0;
+    color: yellow;
+}
+
+
+/* =========== МАКЕТ ========== */
+
+.block-maket{
+    padding: 20px 0;    
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+}
+.maket{
+    max-width: 390px;
+    margin: 0 auto 30px;
+}
+.maket__container {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+
+}
+.maket__title{
+    margin: 0 0 40px 0;
+}
+.title__top{
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin: 0 0 8px 0;
+}
+.title__bottom{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.6;
+    color: #1E212C;
+}
+.maket__list {
+    margin: 0 0 22px 0;
+}
+.maket__item {
+    display: block;
+    line-height: 1.6;
+    color: #424551;
+    padding:  0 0 0 32px;
+    margin: 0 0 12px 0;
+}
+.maket__item:last-child {
+    margin: 0;
+}
+.maket__item::before{
+    content: "";
+    background: url(../img/icons/03.png) 0 0 / 16px no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 16px 0 -32px;
+}
+.maket__button{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 3.14;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    padding: 0 32px;
+    background: #FB4F20;
+    border-radius: 4px;
+}
+
+.maple{
+    max-width: 390px;
+    margin: 0 auto;
+    font-family: 'Taviraj', serif;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.maple::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 0px;
+    border: 1px solid #333333;
+}
