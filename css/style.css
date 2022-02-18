@@ -41,7 +41,7 @@ body {
 .practic {
     padding: 30px;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 0 auto 35px;
 }
 .title {
     font-weight: 700;
@@ -135,12 +135,11 @@ body {
 
 
 .connection{
-    margin: 0 0 35px 0;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    
     border-top-left-radius: 95px;
     border-top-right-radius: 95px;
-    padding: 30px;
+    padding: 30px 30px 150px;
 }
 .button{
     margin: 0 0 35px 0;
@@ -172,7 +171,6 @@ body {
 .block{
     text-align: center;
     display: none;
-    margin: 0 0 20px 0;
     background-image: linear-gradient( 40deg,
     hsl(317deg 85% 59%) 0%,
     hsl(301deg 46% 64%) 19%,
@@ -189,14 +187,18 @@ body {
     hsl(264deg 71% 81%) 100%);
     border-bottom-left-radius: 95px;
     border-bottom-right-radius: 95px;
-    padding:  0 0 20px 0;
+    padding:  0 0 35px 0;
+    margin: 0 0 40px 0;
+}
+.block-containt{
+    margin:  0 0 20px 0;
 }
 .block:target {
     display: block;
 }
 .containt {
     display: inline-block;
-    margin: 0 40px 20px 0;
+    margin: 0 40px 0 0;
 }
 .containt:last-child{
     margin: 0;
@@ -205,21 +207,25 @@ body {
     overflow: hidden;
     border-radius: 0 0 10px 10px;
     min-height: 400px;
-}  
+} 
 .close {
     font-size: 20px;
     width: 200px;
+    text-align: center;
     color: white;
     background-color:  rgb(63, 83, 199);
     margin: 0;
     box-shadow: 0 5px 0 1px rgb(77, 62, 93);
+}
+.close:target{
+    display: none;
 }
 
 
 /* БЛОК СО СПИСКОМ */
 .block-list{
     background: url(../img/5.jpg) 100% 100% no-repeat, rgba(255, 255, 255, 0.514);
-    margin: 0 0 150px 0;
+    /* margin: 0 0 150px 0; */
     padding: 10px;
 }
 .subtitle-h{
@@ -245,8 +251,7 @@ body {
 .list{
     font-family: "Bebas Neue", cursive;
     font-size: 26px;
-    margin: 0 0 20px 0;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 20px 20px;
 
 }
 .list-item {
@@ -299,7 +304,7 @@ body {
 
 .link{
     text-align: center;
-    margin: 0 0 30px 0;
+    padding: 0 0 30px 0;
 }
 .btn-link {
     display: inline-block;
@@ -325,11 +330,15 @@ body {
 /* =========== МАКЕТ ========== */
 
 .block-maket{
-    padding: 20px;    
-    max-width: 390px;
+    padding: 20px 0;    
+    max-width: 500px;
     margin: 0 auto;
     background-color: #FFFFFF;
 
+}
+.maket{
+    max-width: 390px;
+    margin: 0 auto 30px;
 }
 .maket__container {
     font-family: "lato", sans-serif;
@@ -383,10 +392,11 @@ body {
     padding: 0 32px;
     background: #FB4F20;
     border-radius: 4px;
-    margin: 0 0 200px 0;
 }
 
 .maple{
+    max-width: 390px;
+    margin: 0 auto;
     font-family: 'Taviraj', serif;
     font-size: 36px;
     line-height: 40px;
