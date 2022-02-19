@@ -191,6 +191,8 @@ body {
     margin: 0 0 40px 0;
 }
 .block-containt{
+    display: inline-block;
+    text-align: center;
     margin:  0 0 20px 0;
 }
 .block:target {
